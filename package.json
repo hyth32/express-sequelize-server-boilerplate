@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2"
+  },
+  "name": "express-sequelize-boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "@sequelize/core": "^7.0.0-alpha.43",
+    "@sequelize/postgres": "^7.0.0-alpha.43",
+    "sequelize": "^6.37.5",
+    "sequelize-cli": "^6.6.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
