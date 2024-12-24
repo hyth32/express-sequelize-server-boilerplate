@@ -2,11 +2,8 @@ const fs = require('fs')
 const path = require('path')
 const Sequelize = require('@sequelize/core')
 const basename = path.basename(__filename)
-const env = process.env.NODE_ENV || 'development'
-const config = require(__dirname + '/../config/config.js')[env]
+const { sequelize } = require('../db') 
 const db = {}
-
-const sequelize = new Sequelize(config.database, config.username, config.password, config)
 
 fs
   .readdirSync(__dirname)

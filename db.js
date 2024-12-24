@@ -4,7 +4,10 @@ const config = require('./config/config.js')[process.env.NODE_ENV || 'developmen
 
 dotenv.config()
 
-const sequelize = new Sequelize(config.database, config.username, config.password, {
+const sequelize = new Sequelize({
+  database: config.database,
+  user: config.username,
+  password: config.password,
   host: config.host,
   port: config.port,
   dialect: config.dialect,
