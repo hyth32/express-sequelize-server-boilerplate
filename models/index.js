@@ -2,7 +2,7 @@ const fs = require('fs')
 const path = require('path')
 const Sequelize = require('@sequelize/core')
 const basename = path.basename(__filename)
-const { sequelize } = require('../db') 
+const { sequelize } = require('../db')
 const db = {}
 
 fs
