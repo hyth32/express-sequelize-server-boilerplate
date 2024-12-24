@@ -10,9 +10,7 @@ const PORT = process.env.PORT || 3000
 
 app.use(express.json())
 
-app.get('/', (req, res) => {
-  res.send('Hello, Express + Sequelize + PostgreSQL!')
-})
+app.get('/api', router)
 
 app.use((err, req, res, next) => {
   console.error(err.stack)
